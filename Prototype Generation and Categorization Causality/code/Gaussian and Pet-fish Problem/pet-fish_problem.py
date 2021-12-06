@@ -40,7 +40,7 @@ plt.fill_between(typical_fish, fish_gaussian(typical_fish), alpha=0.5,
                  label='Domain of ''Typical Fish''')
 
 plt.plot(x, petFish_gaussian(x), color='purple',
-         label='Distribution of Concrete Pet-fish Exemplars')
+         label='Mixed Distribution of Concrete\nPet-fish Exemplars')
 plt.fill_between(typical_petFish, petFish_gaussian(typical_petFish),
                  color='purple', alpha=0.5,
                  label='Domain of ''Typical Pet-fish''')
@@ -49,7 +49,7 @@ h, l = plt.gca().get_legend_handles_labels()
 h[0], h[1], h[2], h[3], h[4], h[5] = h[0], h[3], h[1], h[4], h[2], h[5]
 l[0], l[1], l[2], l[3], l[4], l[5] = l[0], l[3], l[1], l[4], l[2], l[5]
 
-plt.title("One-dimensional Gaussian Modelling of the Pet-fish Problem")
+plt.title("1D Gaussian Mixture Modelling of the Pet-fish Problem")
 plt.legend(h, l, prop={'size': 7})
 plt.xlabel('Degrees of ''Possession'' of an Arbitrary Feature (in Arbitrary Units)')
 plt.ylabel('Degree of Conceptual Category Membership\n(Probability Density)')

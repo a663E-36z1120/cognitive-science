@@ -43,7 +43,7 @@ plt.fill_between(typical_house, house_gaussian(typical_house), alpha=0.5,
                  label='Domain of ''Typical House''')
 
 plt.plot(x, catHouse_gaussian(x), color='purple',
-         label='Distribution of Cat and House\nCompound Concepts')
+         label='Mixed Distribution of Cat and House\nCompound Concepts')
 plt.fill_between(typical_catHouse, catHouse_gaussian(typical_catHouse),
                  color='maroon', alpha=0.5,
                  label='Domain of ''Typical Cat-house''')
@@ -55,7 +55,7 @@ h, l = plt.gca().get_legend_handles_labels()
 h[0], h[1], h[2], h[3], h[4], h[5] = h[0], h[3], h[1], h[4], h[2], h[5]
 l[0], l[1], l[2], l[3], l[4], l[5] = l[0], l[3], l[1], l[4], l[2], l[5]
 
-plt.title("One-dimensional Gaussian Modelling of Cat and House \n"
+plt.title("1D Gaussian Mixture Modelling of Cat and House \n"
           "Compound Concept")
 plt.legend(h, l, prop={'size': 7})
 plt.xlabel('Degrees of ''Possession'' of an Arbitrary Feature (in Arbitrary Units)')
